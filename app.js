@@ -2,6 +2,7 @@ const github = new GitHub();
 const ui = new UI();
 
 const searchUser = document.getElementById('search-user');
+
 searchUser.addEventListener('keyup', (evt) => {
   evt.preventDefault();
 
@@ -12,6 +13,7 @@ searchUser.addEventListener('keyup', (evt) => {
         ui.showAlert('User not found', 'alert alert-danger');
       } else {
         ui.showProfile(data.profile);
+        ui.showRepos(data.repos);
       }
     });
   } else {
