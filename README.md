@@ -1,0 +1,1 @@
+Simple project using vanilla JavaScript to fetch information from a GitHub user.
